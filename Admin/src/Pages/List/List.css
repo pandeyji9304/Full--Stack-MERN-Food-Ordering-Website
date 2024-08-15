@@ -1,0 +1,39 @@
+.list-table-format {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format.title {
+    background: #f9f9f9; /* Corrected the syntax */
+}
+
+.list-table-format img {
+    width: 50px;
+}
+
+/* Media query for tablets (width less than 768px) */
+@media (max-width: 768px) {
+    .list-table-format {
+        grid-template-columns: 1fr 2fr 1fr; /* Adjust column layout */
+        font-size: 12px; /* Slightly smaller font */
+    }
+}
+
+/* Media query for mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+    .list-table-format {
+        grid-template-columns: 1fr; /* Single column layout */
+        font-size: 11px; /* Smaller font */
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .list-table-format img {
+        width: 40px; /* Smaller image */
+    }
+}
